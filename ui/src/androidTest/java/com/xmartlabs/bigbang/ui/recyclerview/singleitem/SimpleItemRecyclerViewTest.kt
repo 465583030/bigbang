@@ -28,8 +28,7 @@ abstract class SimpleItemRecyclerViewTest {
     cars
         .map(Car::model)
         .forEachIndexed { index, model ->
-          checkRecyclerViewCondition(
-              RecyclerViewAssertions.atPosition(index, withText(model)))
+          checkRecyclerViewCondition(RecyclerViewAssertions.atPosition(index, withText(model)))
         }
   }
 

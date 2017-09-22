@@ -37,7 +37,7 @@ class MultipleItemRecyclerViewTest {
               RecyclerViewAssertions.atPosition(index, withText(brand)))
         }
   }
-
+  
   private fun checkRecyclerViewCondition(viewMatcher: Matcher<View>) {
     val recyclerViewInteraction = onView(withId(R.id.recycler_view))
     recyclerViewInteraction.check(matches(viewMatcher))
